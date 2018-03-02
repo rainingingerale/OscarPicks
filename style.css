@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+.notPicked {
+    background-color: white;
+}
+
+.categoryTitleBar {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    min-height: 60px;
+    background-color: white;
+    margin-bottom: 0px;
+}
+
+.categoryTitleBar p {
+    margin-bottom: 0px;
+}
+
+.flex-grid {
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    border: 5px solid white;
+    position: relative;
+    height: 310px;
+    width: 150px;
+    justify-content: space-around;
+    flex-shrink: 1;
+    flex-basis: auto;
+}
+
+.col span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+ }
+
+img {
+    max-width: 100%
+  }
+
+  .picked {
+    border: 5px solid black;
+    color: white;
+    background-color: black
+    }
+
+.categoriesList {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#mainHeading {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
