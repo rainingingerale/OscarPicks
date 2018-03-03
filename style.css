@@ -6,7 +6,7 @@ body {
 .col {
     border: 5px solid white;
     position: relative;
-    height: 233px;
+    height: 240px;
     width: 105px;
     justify-content: space-around;
     flex-shrink: 1;
@@ -64,8 +64,9 @@ img {
     margin-right: 20px;
 }
 
-#mainHeading {
-    margin-bottom: 20px;
+.mainHeading {
+    margin-top: 70px;
+    margin-bottom: 40px;
     font-size: 3rem;
     font-family: 'Times New Roman', Times, serif;
 }
