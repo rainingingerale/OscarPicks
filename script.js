@@ -244,6 +244,8 @@ getMovie120.addEventListener("click", clickedMovie);
 var lockButtonElement = document.getElementById("lockInButton");
 lockButtonElement.addEventListener("click", lockInFunction);
 
+var resetPicksElement = document.getElementById("resetCurrentPicks");
+resetPicksElement.addEventListener("click", resetPicksFunction);
 
 $(document).ready(function(){
   $("#button").click(function(){
@@ -264,7 +266,9 @@ window.onload = function() {
 
 function setStyles() {
   for (i = 0; i < 121; i++){
-   if (localStorage.getItem('movieKey' + i) == 'picked') {
+    if (localStorage.getItem('movieKey' + i) == 'notPicked') {
+      document.getElementById('movieKey' + i).className = "col notPicked";}
+    else if (localStorage.getItem('movieKey' + i) == 'picked') {
     document.getElementById('movieKey' + i).className = "col picked";}
     else if (localStorage.getItem('movieKey' + i) == 'locked') {
       document.getElementById('movieKey' + i).className = "col locked";}
@@ -322,6 +326,14 @@ function lockInFunction() {
    localStorage.setItem("movieKey" + i, 'locked');
    setStyles();
   }
+}
+
+function resetPicksFunction() {
+  var r = confirm("Are you sure you want to reset all of your picks?")
+  if (r == true) {
+  for (i = 0; i < 121; i++) {
+  localStorage.setItem("movieKey" + i, 'notPicked')}};
+  setStyles();
 }
 
 
