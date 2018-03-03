@@ -3,6 +3,21 @@ body {
     background-color: white;
 }
 
+.col {
+    border: 5px solid white;
+    position: relative;
+    height: 233px;
+    width: 105px;
+    justify-content: space-around;
+    flex-shrink: 1;
+    flex-basis: auto;
+}
+
+.locked {
+    border: 5px solid gold;
+    color: black;
+    background-color: gold
+}
 .notPicked {
     background-color: white;
 }
@@ -26,15 +41,7 @@ body {
     flex-wrap: wrap;
 }
 
-.col {
-    border: 5px solid white;
-    position: relative;
-    height: 233px;
-    width: 105px;
-    justify-content: space-around;
-    flex-shrink: 1;
-    flex-basis: auto;
-}
+
 
 .col span {
     position: absolute;
